@@ -1,4 +1,4 @@
-### TeamsCC
+# TeamsCC
 I made this script because I found a rather annoying bug in Microsoft Teams. When you hover over a person their profile picture, a different profile picture would appear.
 This is caused by Microsoft not being capable of adding a button for the end user to clear cache, or even, to automate it daily.
 
