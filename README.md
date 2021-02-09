@@ -17,6 +17,9 @@ If you are experiencing any major issues or if the new profile pictures still do
 - (Maybe) administrator rights - I have not tested this (yet)
 
 ## Changelog
+v0.3-fixed
+- Fixed a bug where Teams wasn't fully closed so it would spit out errors
+
 v0.3
 - Script now kills Teams before proceeding
 
