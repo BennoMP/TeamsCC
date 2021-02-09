@@ -1,6 +1,7 @@
 @echo off
 echo Killing Microsoft Teams processes. Please be patient...
-taskkill /IM Teams.exe /T
+taskkill /IM Teams.exe /T /F
+timeout 1 > NUL
 echo Now clearing caches. Please be patient...
 cd %appdata%\Microsoft\teams
 del /Q /S blob_storage
