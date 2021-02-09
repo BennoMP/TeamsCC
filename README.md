@@ -20,6 +20,7 @@ If you are experiencing any major issues or if the new profile pictures still do
 v0.2
 - Added prompt for settings folder
 - Upload to Github
+
 v0.1
 - First release
 
