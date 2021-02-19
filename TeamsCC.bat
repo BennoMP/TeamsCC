@@ -1,4 +1,5 @@
 @echo off
+echo Release 0.3, brought to you by BennoMP
 echo Killing Microsoft Teams processes. Please be patient...
 taskkill /IM Teams.exe /T /F
 timeout 1 > NUL
