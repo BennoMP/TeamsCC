@@ -1,6 +1,6 @@
 @echo off
 echo #################################
-echo # Release 0.3, made by BennoMP. #
+echo # Release 0.4, made by BennoMP. #
 echo #################################
 timeout 1 > NUL
 echo ###########################################################
