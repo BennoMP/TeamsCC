@@ -1,29 +1,33 @@
 @echo off
-echo #################################
-echo # Release 0.4, made by BennoMP. #
-echo #################################
+echo ###############################################
+echo #        Release 0.5, made by BennoMP.        #
+echo ###############################################
 timeout 1 > NUL
-echo ###########################################################
-echo # Killing Microsoft Teams processes. Please be patient... #
-echo ###########################################################
+echo ###############################################
+echo #     Killing Microsoft Teams processes...    #
+echo ###############################################
 taskkill /IM Teams.exe /T /F
 timeout 1 > NUL
-echo #############################################
-echo # Now clearing caches. Please be patient... #
-echo #############################################
+echo ###############################################
+echo #            Now clearing caches...           #
+echo ###############################################
 cd %appdata%\Microsoft\teams
 del /Q /S blob_storage
-echo ----------                                         (20%)
+del /Q /S Cache
+del /Q /S "Code Cache"
 del /Q /S databases
-echo --------------------                               (40%)
 del /Q /S GPUCache
-echo ------------------------------                     (60%)
 del /Q /S IndexedDB
-echo ---------------------------------------            (80%)
+del /Q /S meeting-addin
+del /Q /S "Service Worker\CacheStorage"
+del /Q /S "Service Worker\ScriptCache"
+del /Q /S "Session Storage"
+del /Q /S skylib
 del /Q /S tmp
-echo -------------------------------------------------  (100%)
+del /Q /S Cookies
+del /Q /S Cookies-journal
 timeout 1 > NUL
-echo ##################################################################
-echo # Now proceeding to launch Microsoft Teams. Please be patient... #
-echo ##################################################################
+echo ###############################################
+echo # Now proceeding to launch Microsoft Teams... #
+echo ###############################################
 %USERPROFILE%\AppData\Local\Microsoft\Teams\Update.exe --processStart "Teams.exe"
